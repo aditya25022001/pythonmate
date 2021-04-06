@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#form-fields {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+}
+#form-field-label-input {
+  width: 88%;
+}
+#mobile-weekdays {
+  display: none;
+}
+#weekdays {
+  display: flex;
+  flex-direction: row;
+}
+#button {
+  border-radius: 150px;
+  margin-left: auto;
+}
+#last-form {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 61em) {
+  #form-fields {
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  #mobile-weekdays {
+    display: flex;
+    flex-direction: column;
+  }
+  #form-field-label {
+    margin-bottom: 10px;
+  }
+  #form-field-label-input {
+    width: 100%;
+  }
+  #weekdays {
+    display: none;
+  }
+  #button {
+    border-radius: 150px;
+    margin: 15px auto;
+    width: 100%;
+  }
+  #last-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
